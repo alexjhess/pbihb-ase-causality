@@ -23,16 +23,9 @@ The analysis code is located in the `main.R` file. The folder `renv` contains al
 1. Click the following badge to launch the repo on Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/alexjhess/pbihb-ase-causality/HEAD)  
 :warning: Binder can take a long time to load, but this doesn’t necessarily mean that your Binder will fail to launch. You can always refresh the window if you see the “… is taking longer to load, hang tight!” message. If everything ran smoothly, you’ll see a JupyterLab interface.
 
-2. In the JupyterLab, select RStudio from the Launcher panel.
+2. In the JupyterLab, select RStudio from the Launcher panel. Upon startup of RStudio, renv 1.0.7 is bootstrapping automatically. 
 
-3. Upon startup of RStudio, renv 1.0.7 is bootstrapping automatically. Next, restore the R project necessary to run the analysis. In the console, type
-```
-renv::restore()
-```
-
-4. When asked "Do you want to proceed? [Y/n]:" type `y` and hit enter.
-
-5. Open and run the script `main.R` to reproduce the results reported in the publication.
+3. Open and run the script `main.R` to reproduce the results reported in the publication.
 
 
 ### Run analysis locally
