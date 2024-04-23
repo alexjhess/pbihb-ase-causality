@@ -15,45 +15,55 @@ The data used for the analysis are available on Zenodo under <https://doi.org/10
 
 ## Getting started
 
-The code can be run via [Binder](https://mybinder.org/) (does not require any installations): [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/alexjhess/pbihb-ase-causality/HEAD)
+The code can be run in via [Binder](https://mybinder.org/) in an executable environment (does not require any installations) or on a local work station. Binder is the recommended running way of running the code for reproducibility and compatibility purposes. However, we provide instructions for running the code via Binder or locally.
 
-### 0. Requirements
 
-The analysis pipeline was built using the following software:
-* [R 4.2.1](https://cran.r-project.org/)
-* [RStudio IDE 2023.12.1](https://docs.posit.co/previous-versions/rstudio/)
-* [renv 1.0.7](https://rstudio.github.io/renv/)
+### Run analysis on Binder
 
-### 1. Install repository
+1. Click the following badge to launch the repo on Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/alexjhess/pbihb-ase-causality/HEAD)  
+:warning: Binder can take a long time to load, but this doesn’t necessarily mean that your Binder will fail to launch. You can always refresh the window if you see the “… is taking longer to load, hang tight!” message. If everything ran smoothly, you’ll see a JupyterLab interface.
 
-Clone this repository using the command (ssh protocol used for communication with github.com):
+2. In the JupyterLab, select RStudio from the Launcher panel.
 
-```
-git clone git@github.com:alexjhess/pbihb-ase-causality.git
-```
-
-The analysis code is located in the `main.R` file. The folder `renv` contains all specifiations of the RStudio "project" used to create a reproducible computational environment.
-
-### 2. Get data
-
-The data set used in the analysis is freely available on Zenodo under <https://doi.org/10.5281/zenodo.10992529>.
-Download and save the files within the `data` folder of the code repository.
-
-### 3. Create R project environment
-
-Open RStudio 2023.12.1 from directory of the `pbihb_ase_causality` repository. Upon startup of RStudio, renv 1.0.7 is bootstrapping automatically.
+3. Upon startup of RStudio, renv 1.0.7 is bootstrapping automatically.
 In the console, type
-
 ```
 renv::restore()
 ```
-
 to restore the R project necessary to run the analysis.
 When asked "Do you want to proceed? [Y/n]:" type `y` and hit enter.
 
-### 4. Run the analysis
+4. Open and run the script `main.R` to reproduce the results reported in the publication.
 
-Open and run the script `main.R` to reproduce the results reported in the publication.
+
+### Run analysis locally
+
+0. Requirements: The analysis pipeline was built using the following software:
+  * Windows 11 Pro, Version 23H2, OS build 22631.3447
+  * [R 4.2.1](https://cran.r-project.org/)
+  * [RStudio IDE 2023.12.1](https://docs.posit.co/previous-versions/rstudio/)
+  * [renv 1.0.7](https://rstudio.github.io/renv/)  
+
+
+1. Install repository: Clone this repository using the command (ssh protocol used for communication with github.com):
+```
+git clone git@github.com:alexjhess/pbihb-ase-causality.git
+```
+The analysis code is located in the `main.R` file. The folder `renv` contains all specifiations of the RStudio "project" used to create a reproducible computational environment.
+
+2. Get data: The data set used in the analysis is freely available on Zenodo under <https://doi.org/10.5281/zenodo.10992529>.
+Download and save the files within the `data` folder of the code repository.
+
+3. Create R project environment: Open RStudio 2023.12.1 from directory of the `pbihb_ase_causality` repository. Upon startup of RStudio, renv 1.0.7 is bootstrapping automatically.
+In the console, type
+```
+renv::restore()
+```
+to restore the R project necessary to run the analysis.
+When asked "Do you want to proceed? [Y/n]:" type `y` and hit enter.  
+:warning: Please note that environment was built using Windows 11, no guarantees can be made for compatibility with different operating systems). However, all relevant packages are specified in the `install.R` file and may be installed manually instead of using `renv`.
+
+4. Run the analysis: Open and run the script `main.R` to reproduce the results reported in the publication.
 (Make sure that your working directory in RStudio is set to the directory of the `pbihb_ase_causality` repository when running the analysis.)
 
 
