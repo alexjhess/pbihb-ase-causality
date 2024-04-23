@@ -3,7 +3,7 @@
 ## Analysis using PBIHB data set ##
 
 
-## set working directory to path of 'ase_pbihb_data' repo
+## set working directory to path of 'pbihb-ase-causality' repo
 getwd() # print wd (double-check)
 
 ## load data set
