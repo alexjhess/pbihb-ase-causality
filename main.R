@@ -152,6 +152,7 @@ confint(msm1a)
 # _______________________________________
 ## use doubleML for ECE
 library(DoubleML)
+set.seed(1234)
 
 # implement causal model (inference on effect of variable d on y, confounds x)
 obj_dml_data <- double_ml_data_from_data_frame(df = ase_pbihb_data,
