@@ -288,7 +288,7 @@ set.seed(123)
 doubleml_plr2a$fit() 
 doubleml_plr2a$summary()
 doubleml_plr2a$t_stat
-doubleml_plr2a$pval/2 # p-value for one-sided t-test 
+doubleml_plr2a$pval/2 # (one-sided p-value) = 0.5*(two-sided p-value) 
 doubleml_plr2a$confint()
 
 
@@ -313,6 +313,6 @@ set.seed(123)
 doubleml_plr2b$fit() 
 doubleml_plr2b$summary()
 doubleml_plr2b$t_stat
-doubleml_plr2b$pval/2 # p-value for one-sided t-test
+1 - doubleml_plr2b$pval/2 # (one-sided p-value) = 1 - 0.5*(two-sided p-value) 
 doubleml_plr2b$confint()
 
