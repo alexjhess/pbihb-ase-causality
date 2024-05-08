@@ -54,13 +54,17 @@ When running analysis on binder:
 	- linear regression: rounding error fixed for upper bound of confidence interval (-0.099)
 	- propensity score: :white_check_mark:  
 	- DML: :white_check_mark:  
+- Table A1 & A2: 
+	- linear regression: :white_check_mark:  
+	- propensity score: :white_check_mark:  
+	- DML: :white_check_mark:  
 
 All results were reproducible also when running locally on Mac, however, with slight differences for DML (qualitatively results stayed the same).  
 
 ## Objectives for part 2 (Checkpoints)
-1. Check plausibility of questionnaire scores. 
-2. Standardization of data for hypothesis 2 and 3. (scale command and correct use for tests)
-3. Check usage of conditional independence functions and linear model.
-4. (Check implementation of propensity score method and DML)
+1. Check plausibility of questionnaire scores. :white_check_mark:  
+2. Standardization of data for hypothesis 2 and 3. :white_check_mark:  
+3. Check usage of conditional independence functions and linear model. :white_check_mark:  
+
 
 Other points: None.
