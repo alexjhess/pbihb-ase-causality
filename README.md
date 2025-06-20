@@ -18,6 +18,11 @@ The data used for the analysis are available on Zenodo under <https://doi.org/10
 The analysis code is located in the `main.R` file. The folder `renv` contains all specifiations of the RStudio "project" used to create a reproducible computational environment. The code can be run in via [Binder](https://mybinder.org/) in an executable environment (does not require any installations) or on a local work station. Binder is the recommended running way of running the code for reproducibility and compatibility purposes. However, we provide instructions for running the code via Binder or locally.
 
 
+### Run analysis on Google Colab
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/alexjhess/pbihb-ase-causality/blob/main/colab/main.ipynb)
+
+
 ### Run analysis on Binder
 
 1. Click the following badge to launch the repo on Binder: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/alexjhess/pbihb-ase-causality/HEAD)  
